@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes y Calificaciones</title>
+    <script src="java.js" defer></script>
+</head>
+<body>
+    <h1>Registro de Estudiantes y Calificaciones</h1>
+    <form id="formularioEstudiantes">
+        <div>
+            <label for="nombre">Nombre del Estudiante:</label>
+            <input type="text" id="nombre" required>
+        </div>
+        <div>
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="nota1" min="0" max="20" >
+        </div>
+        <div>
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" min="0" max="20" >
+        </div>
+        <div>
+            <label for="nota3">Nota 3:</label>
+            <input type="number" id="nota3" min="0" max="20" >
+        </div>
+        <div>
+            <label for="nota4">Nota 4:</label>
+            <input type="number" id="nota4" min="0" max="20" >
+        </div>
+        <button type="submit">Agregar Estudiante</button>
+    </form>
+
+    <h2>Promedio General: <span id="promedioGeneral"></span></h2>
+    <h3>Estudiantes con calificaciones mayores al promedio:</h3>
+    <ul id="mayores"></ul>
+    <h3>Estudiantes con calificaciones menores o iguales al promedio:</h3>
+    <ul id="menores"></ul>
+</body>
+</html>
